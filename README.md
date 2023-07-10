@@ -1,12 +1,12 @@
-# Wordpress template
+# WordPress template
 
-This template deploys a self-hosted version of [Wordpress](https://wordpress.org/). Internally it uses a mySQL database to store the data.
+This template deploys a self-hosted version of [WordPress](https://wordpress.org/). Internally it uses a mySQL database to store the data.
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/EP4wIt?referralCode=fKo7dw)
 
 ## ✨ Features
 
-- Wordpress
+- WordPress
 - mySQL
 
 ## 💁‍♀️ How to use
@@ -18,3 +18,4 @@ This template deploys a self-hosted version of [Wordpress](https://wordpress.org
 ## 📝 Notes
 
 - Source image: https://hub.docker.com/_/wordpress
+- Docs: https://wordpress.org/documentation/
