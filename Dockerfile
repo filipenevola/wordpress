@@ -19,4 +19,4 @@ RUN echo "DirectoryIndex index.php index.html" >> /etc/apache2/apache2.conf
 
 EXPOSE $PORT
 
-CMD ["apache2-foreground", "-D", "APACHE_PORT="$PORT]
+CMD ["apache2-foreground", "-D", "APACHE_PORT=$PORT"]
