@@ -20,5 +20,8 @@ RUN echo "ServerName 0.0.0.0" >> /etc/apache2/apache2.conf
 # Add DirectoryIndex directive
 RUN echo "DirectoryIndex index.php index.html" >> /etc/apache2/apache2.conf
 
-# Start the Apache web server
-CMD ["apache2-foreground"]
+# Expose port 8080
+EXPOSE 8080
+
+# Start the Apache web server on port 8080
+CMD ["apache2-foreground", "-D", "FOREGROUND", "-D", "HTTPD_PORT=8080"]
