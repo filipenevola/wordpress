@@ -12,7 +12,7 @@ This template deploys a self-hosted version of [Wordpress](https://wordpress.org
 ## 💁‍♀️ How to use
 
 - Click the Railway button 👆
-- Add the required environment variables
+- Add the required environment variables (note: requires PORT=80 temporarily)
 - Deploy (note: you may have to wait a minute until the Apache server is ready)
 
 ## 📝 Notes
