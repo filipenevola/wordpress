@@ -5,6 +5,7 @@ ARG MYSQLHOST
 ARG MYSQLPORT
 ARG MYSQLDATABASE
 ARG MYSQLUSER
+ARG PORT
 
 ENV WORDPRESS_DB_HOST=$MYSQLHOST:$MYSQLPORT
 ENV WORDPRESS_DB_NAME=$MYSQLDATABASE
@@ -17,6 +18,6 @@ RUN echo "ServerName 0.0.0.0" >> /etc/apache2/apache2.conf
 
 RUN echo "DirectoryIndex index.php index.html" >> /etc/apache2/apache2.conf
 
-EXPOSE 8080
+EXPOSE $PORT
 
-CMD ["apache2-foreground", "-D", "APACHE_PORT=8080"]
+CMD ["apache2-foreground", "-D", "APACHE_PORT="$PORT]
